@@ -114,14 +114,16 @@
             <exclude>org.scala-lang:scala-library</exclude>
           </excludes>
           <classpathContainers>
-            <classpathContainer>ch.epfl.lamp.sdt.launching.SCALA_CONTAINER</classpathContainer>
+            <classpathContainer>org.scala-ide.sdt.launching.SCALA_CONTAINER</classpathContainer>
+            <!-- JRE_CONTAINER is usually added automatically but needs to be defined so the order is correct -->
+            <classpathContainer>org.eclipse.jdt.launching.JRE_CONTAINER</classpathContainer>
           </classpathContainers>
           <projectnatures>
-            <java.lang.String>ch.epfl.lamp.sdt.core.scalanature</java.lang.String>
+            <java.lang.String>org.scala-ide.sdt.core.scalanature</java.lang.String>
             <java.lang.String>org.eclipse.jdt.core.javanature</java.lang.String>
           </projectnatures>
           <buildcommands>
-            <java.lang.String>ch.epfl.lamp.sdt.core.scalabuilder</java.lang.String>
+            <java.lang.String>org.scala-ide.sdt.core.scalabuilder</java.lang.String>
           </buildcommands>
           <sourceIncludes>
             <sourceInclude>**/*</sourceInclude>
