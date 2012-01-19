@@ -123,6 +123,9 @@
           <buildcommands>
             <java.lang.String>ch.epfl.lamp.sdt.core.scalabuilder</java.lang.String>
           </buildcommands>
+          <sourceIncludes>
+            <sourceInclude>**/*</sourceInclude>
+          </sourceIncludes>
         </configuration>
       </plugin>
     </plugins>
